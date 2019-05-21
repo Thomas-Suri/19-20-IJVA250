@@ -21,12 +21,12 @@ Faire de même avec un export au format xlsx. Cela correspond au format Excel pe
 Exemple de code pour réaliser un fichier xslx
 ```
 Workbook workbook = new XSSFWorkbook();
-Sheet sheet = workbook.createSheet("Clients");
-Row headerRow = sheet.createRow(0);
-Cell cellPrenom = headerRow.createCell(0);
-cellPrenom.setCellValue("Prénom");
-workbook.write(fileOutputStream);
-workbook.close();
+                 Sheet sheet = workbook.createSheet("Clients");
+                 Row headerRow = sheet.createRow(0);
+                 Cell cellPrenom = headerRow.createCell(0);
+                 cellPrenom.setCellValue("Prénom");
+                 workbook.write(fileOutputStream);
+                 workbook.close();
 ```
 Exercice:
 * Créer un export XLSX de tous les clients (colonnes: nom, prénom) => accessible via le lien xlsx dans la home page
