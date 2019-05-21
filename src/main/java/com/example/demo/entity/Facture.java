@@ -43,4 +43,8 @@ public class Facture {
 
         return total;
     }
+
+    public Set<LigneFacture> getLigneFactures() {
+        return ligneFactures;
+    }
 }
